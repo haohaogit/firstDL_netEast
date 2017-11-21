@@ -4,12 +4,17 @@ from PIL import Image
 import numpy as np
 
 
-def cookerAssembleColor(minitemS,minitemK,minitemB,minitemD,rgb):
+def cookerAssembleColor(content,rgb,timeid):
     # minitemS = sys.argv[1]
     # minitemK = sys.argv[2]
     # minitemB = sys.argv[3]
     # minitemD = sys.argv[4]
-    print("crgb111 "+rgb)
+    content = content.split(",")
+    minitemS = content[0]
+    minitemK = content[1]
+    minitemB = content[2]
+    minitemD = content[3]
+    print("crgb222 "+rgb)
     rgb = rgb.split(',')
     r = int(rgb[0])
     g = int(rgb[1])
@@ -25,24 +30,24 @@ def cookerAssembleColor(minitemS,minitemK,minitemB,minitemD,rgb):
 
     if minitemD == "D1":
         boat = Image.new('RGBA', (1625,1000),'white')					
-        imageA = Image.open("D:/20170602/PycharmProjects/firstDL_netEast/artgene/D1/" + minitemS + '.png')
-        imageB = Image.open("D:/20170602/PycharmProjects/firstDL_netEast/artgene/D1/" + minitemK + '.png')
-        imageC = Image.open("D:/20170602/PycharmProjects/firstDL_netEast/artgene/D1/" + minitemB + '.png')
+        imageA = Image.open("C:/firstDL_netEast/artgene/D1/" + minitemS + '.png')
+        imageB = Image.open("C:/firstDL_netEast/artgene/D1/" + minitemK + '.png')
+        imageC = Image.open("C:/firstDL_netEast/artgene/D1/" + minitemB + '.png')
         #print minitemD
     else:
         boat = Image.new('RGBA', (1800,1000),'white')					
-        imageA = Image.open("D:/20170602/PycharmProjects/firstDL_netEast/artgene/D2/" + minitemS + '.png')
-        imageB = Image.open("D:/20170602/PycharmProjects/firstDL_netEast/artgene/D2/" + minitemK + '.png')
-        imageC = Image.open("D:/20170602/PycharmProjects/firstDL_netEast/artgene/D2/" + minitemB + '.png')
+        imageA = Image.open("C:/firstDL_netEast/artgene/D2/" + minitemS + '.png')
+        imageB = Image.open("C:/firstDL_netEast/artgene/D2/" + minitemK + '.png')
+        imageC = Image.open("C:/firstDL_netEast/artgene/D2/" + minitemB + '.png')
 	
     #imageA = Image.open('A2' + '.png')
     #imageB = Image.open('K3' + '.png')
     #imageC = Image.open('C1' + '.png')
     
-    imageDMask = Image.open('D:/20170602/PycharmProjects/firstDL_netEast/artgene/maskboardD1RGB229.229.229' + '.jpg')
-    imgaecaizhi = Image.open('D:/20170602/PycharmProjects/firstDL_netEast/artgene/M22' + '.jpg')
+    imageDMask = Image.open('C:/firstDL_netEast/artgene/maskboardD1RGB229.229.229' + '.jpg')
+    imgaecaizhi = Image.open('C:/firstDL_netEast/artgene/M22' + '.jpg')
     imgaecaizhi = imgaecaizhi.resize((1652, 1000))
-    imgaelogo = Image.open('D:/20170602/PycharmProjects/firstDL_netEast/artgene/LOGO4' + '.png')
+    imgaelogo = Image.open('C:/firstDL_netEast/artgene/LOGO4' + '.png')
     # print imageDMask.size, imgaecaizhi.size
     # print minitemS, minitemK,minitemB,minitemD
     
@@ -68,7 +73,9 @@ def cookerAssembleColor(minitemS,minitemK,minitemB,minitemD,rgb):
     r,g,b,a = imageB.split()
     boat.paste(imageB, (0,0), mask = a)
     r,g,b,a = imgaelogo.split()
-    boat.save("D:/2017/images/cookerColor.png")
+    boat.save("C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/cookerColorA_"+timeid+".jpg")
+    boat.save("C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/cookerTextureA_"+timeid+".jpg")
+    boat.save("C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/cookerPartA_"+timeid+".jpg")
 	#boat.paste(imgaelogo, (0,0), mask = a)
     #return minitemS,minitemK,minitemB,minitemD
     #imageA.paste(imageC)
@@ -76,5 +83,5 @@ def cookerAssembleColor(minitemS,minitemK,minitemB,minitemD,rgb):
 if __name__ == '__main__':
     # print("aaaaaaaaaa")
     # print(sys.argv[0])
-    cookerAssembleColor(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4],sys.argv[5])
+    cookerAssembleColor(sys.argv[1],sys.argv[2],sys.argv[3])
     # cookerAssembleColor('A5', 'B1', 'C2', 'D2', '110,110,110')
