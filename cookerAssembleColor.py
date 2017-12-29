@@ -43,39 +43,45 @@ def cookerAssembleColor(content,rgb,timeid):
     #imageA = Image.open('A2' + '.png')
     #imageB = Image.open('K3' + '.png')
     #imageC = Image.open('C1' + '.png')
-    
-    imageDMask = Image.open('C:/firstDL_netEast/artgene/maskboardD1RGB229.229.229' + '.jpg')
     imgaecaizhi = Image.open('C:/firstDL_netEast/artgene/M22' + '.jpg')
-    imgaecaizhi = imgaecaizhi.resize((1652, 1000))
+    imageDMask = Image.open('C:/firstDL_netEast/artgene/maskboardD1RGB229.229.229' + '.png')
+    if minitemD == "D1":
+        imgaecaizhi = imgaecaizhi.resize((1652, 1000))
+        imageDMask = imageDMask.resize((1652, 1000))
+    else:
+        imgaecaizhi = imgaecaizhi.resize((1800, 1000))
+        imageDMask = imageDMask.resize((1800, 1000))
+
     imgaelogo = Image.open('C:/firstDL_netEast/artgene/LOGO4' + '.png')
+
     # print imageDMask.size, imgaecaizhi.size
     # print minitemS, minitemK,minitemB,minitemD
-    
+
     imageDMaskArray = np.array(imageDMask)
-    rows,cols,dims = imageDMaskArray.shape
-    # print rows,cols,dims
+    rows, cols, dims = imageDMaskArray.shape
+    print(rows, cols, dims)
     pix = imageDMask.load()
     for x in range(cols):
         for y in range(rows):
-            rs,gs,bs = pix[x,y]
-            if rs in range(229-5,229+5):
-                pix[x,y] = (r,g,b)
+            rs, gs, bs, ass = pix[x, y]
+            if rs in range(229 - 5, 229 + 5):
+                pix[x, y] = (r, g, b, ass)
                 #print pix[x,y]
                 #print imageDMaskArray[x,y:].all()
     #plt.imshow(imageDMaskArray)
     #imgBlend = Image.blend(imageDMask, imgaecaizhi, 0.7)
     imgBlend = imageDMask
     r,g,b,a = imageC.split()
-    boat.paste(imgBlend, (0,0))
+    #boat.paste(imgBlend, (0,0))
     #boat.paste(imageC, (0,0), mask = a)
     r,g,b,a = imageA.split()
-    boat.paste(imageA, (0,0), mask = a)
+    imgBlend.paste(imageA, (0,0), mask = a)
     r,g,b,a = imageB.split()
-    boat.paste(imageB, (0,0), mask = a)
+    imgBlend.paste(imageB, (0,0), mask = a)
     r,g,b,a = imgaelogo.split()
-    boat.save("C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/cookerColorA_"+timeid+".jpg")
-    boat.save("C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/cookerTextureA_"+timeid+".jpg")
-    boat.save("C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/cookerPartA_"+timeid+".jpg")
+    imgBlend.save("C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/cookerColorA_"+timeid+".jpg")
+    imgBlend.save("C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/cookerTextureA_"+timeid+".jpg")
+    imgBlend.save("C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/cookerPartA_"+timeid+".jpg")
 	#boat.paste(imgaelogo, (0,0), mask = a)
     #return minitemS,minitemK,minitemB,minitemD
     #imageA.paste(imageC)
@@ -84,4 +90,4 @@ if __name__ == '__main__':
     # print("aaaaaaaaaa")
     # print(sys.argv[0])
     cookerAssembleColor(sys.argv[1],sys.argv[2],sys.argv[3])
-    # cookerAssembleColor('A5', 'B1', 'C2', 'D2', '110,110,110')
+    # cookerAssembleColor("A5,B1,C2,D2","110,110,110","1111")

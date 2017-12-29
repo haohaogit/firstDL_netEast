@@ -1,4 +1,4 @@
-
+#coding:utf-8
 import math
 from PIL import Image
 import numpy as np
@@ -6,9 +6,17 @@ import copy
 import random
 from PIL import ImageDraw
 import sys
+import importlib
+print(sys.getdefaultencoding())
+importlib.reload(sys)
+# sys.setdefaultencoding('GBK')
 
+# print(sys.argv[3])
+# print(sys.argv[4].encode('utf-8').decode('gbk'))
+#
+# print(sys.argv[5])
 def HtoRGB(v1,v2,h):
-	if h<0: 
+	if h<0:
 		h= h+1
 	if h>1:
 		h=h-1
@@ -34,7 +42,7 @@ def hsv2rgb(h, s, l):
 	else:
 		x1 = l+s-s*l
 	x2=2*l-x1
-	
+
 	r=255.0*HtoRGB(x2,x1,h+1.0/3.0)
 	g=255.0*HtoRGB(x2,x1,h)
 	b=255.0*HtoRGB(x2,x1,h-1.0/3.0)
@@ -63,7 +71,7 @@ class pm:
 		h = 0
 		ts = 0
 		tl = 0
-		
+
 def AddAMatchingFromACenter(params, packs, numColorPerPack, h, s, l, span0, span1, span2, flag):
 	if(flag == 0):
 		theta = span0/numColorPerPack
@@ -78,7 +86,7 @@ def AddAMatchingFromACenter(params, packs, numColorPerPack, h, s, l, span0, span
 			dis = (numColorPerPack/2)*avg
 		low = h-dis
 		pack = []
-		
+
 		for  i in range(numColorPerPack):
 			p = pk()
 			p.h = low + avg*i
@@ -109,7 +117,7 @@ def AddAMatchingFromACenter(params, packs, numColorPerPack, h, s, l, span0, span
 			dis = (numColorPerPack/2)*avg
 		low = s-dis
 		pack = []
-		
+
 		for i in range(numColorPerPack):
 			p = pk()
 			p.h = h
@@ -140,13 +148,13 @@ def AddAMatchingFromACenter(params, packs, numColorPerPack, h, s, l, span0, span
 		low = l-dis
 
 		pack = []
-		
+
 		for i in range(numColorPerPack):
 			p = pk()
 			p.h = h
 			p.s = s
 			p.v = low + avg*i
-			
+
 			if (p.v>1.0):
 				p.v = 0.95
 			pack.append(p)
@@ -172,7 +180,7 @@ def AddAMatchingFromACenter(params, packs, numColorPerPack, h, s, l, span0, span
 		else:
 			dis0 = (numColorPerPack/2)*avg0
 		low0 = h-dis0
-		
+
 		avg1 = span1/(numColorPerPack-1)
 		dis1 = 0
 		low1 = 0
@@ -181,9 +189,9 @@ def AddAMatchingFromACenter(params, packs, numColorPerPack, h, s, l, span0, span
 		else:
 			dis1 = (numColorPerPack/2)*avg1
 		low1 = s-dis1
-		
+
 		pack = []
-		
+
 		for  i in range(numColorPerPack):
 			p = pk()
 			p.h = low0 + avg0*i
@@ -218,7 +226,7 @@ def AddAMatchingFromACenter(params, packs, numColorPerPack, h, s, l, span0, span
 		else:
 			dis0 = (numColorPerPack/2)*avg0
 		low0 = h-dis0
-		
+
 		avg2 = span2/(numColorPerPack-1)
 		dis2 = 0
 		low2 = 0
@@ -227,9 +235,9 @@ def AddAMatchingFromACenter(params, packs, numColorPerPack, h, s, l, span0, span
 		else:
 			dis2 = (numColorPerPack/2)*avg2
 		low2 = l-dis2
-		
+
 		pack = []
-		
+
 		for  i in range(numColorPerPack):
 			p = pk()
 			p.h = low0 + avg0*i
@@ -261,7 +269,7 @@ def AddAMatchingFromACenter(params, packs, numColorPerPack, h, s, l, span0, span
 		else:
 			dis1 = (numColorPerPack/2)*avg1
 		low1 = s-dis1
-		
+
 		avg2 = span2/(numColorPerPack-1)
 		dis2 = 0
 		low2 = 0
@@ -270,9 +278,9 @@ def AddAMatchingFromACenter(params, packs, numColorPerPack, h, s, l, span0, span
 		else:
 			dis2 = (numColorPerPack/2)*avg2
 		low2 = l-dis2
-		
+
 		pack = []
-		
+
 		for  i in range(numColorPerPack):
 			p = pk()
 			p.h = h
@@ -305,7 +313,7 @@ def AddAMatchingFromACenter(params, packs, numColorPerPack, h, s, l, span0, span
 		else:
 			dis0 = (numColorPerPack/2)*avg0
 		low0 = h-dis0
-	
+
 		avg1 = span1/(numColorPerPack-1)
 		dis1 = 0
 		low1 = 0
@@ -314,7 +322,7 @@ def AddAMatchingFromACenter(params, packs, numColorPerPack, h, s, l, span0, span
 		else:
 			dis1 = (numColorPerPack/2)*avg1
 		low1 = s-dis1
-		
+
 		avg2 = span2/(numColorPerPack-1)
 		dis2 = 0
 		low2 = 0
@@ -323,9 +331,9 @@ def AddAMatchingFromACenter(params, packs, numColorPerPack, h, s, l, span0, span
 		else:
 			dis2 = (numColorPerPack/2)*avg2
 		low2 = l-dis2
-		
+
 		pack = []
-		
+
 		for  i in range(numColorPerPack):
 			p = pk()
 			p.h = low0 + avg0*i
@@ -350,10 +358,9 @@ def AddAMatchingFromACenter(params, packs, numColorPerPack, h, s, l, span0, span
 		param.ts = s
 		param.tl = l
 		params.append(param)
-		
+
 
 def generateScarv(rgbs, packNum, imageAName, materiafile,timeid):
-	
 	C2 = [255, 0]
 	C3 = [229, 127, 76]
 	C4 = [229, 178, 127, 76]
@@ -364,14 +371,14 @@ def generateScarv(rgbs, packNum, imageAName, materiafile,timeid):
 	C9 = [229, 204, 178, 153, 127, 102, 76, 51, 25]
 	C10 = [255, 229, 204, 178, 153, 127, 102, 76, 51, 25]
 	rgbs = rgbs.split(',')
-	
+	print(materiafile)
 	#packNum = varPacNum.get()
 	packNum = int(packNum)
 	if packNum == 0:
 		return
-		
+
 	#imageAName = varName.get()
-	
+
 	if imageAName == "":
 		return
 
@@ -418,11 +425,13 @@ def generateScarv(rgbs, packNum, imageAName, materiafile,timeid):
 						#print int(rss[j][i]),int(gss[j][i]),int(bss[j][i])
 						#imageAArrayTemp.putpixel((x,y), (rss[j][i],gss[j][i],bss[j][i]))
 		#print id(imageAArrayTemp)
-	
+
 
 		#imageA.paste(imageC)
-	
+	print("1111")
+	aaa = materiafile
 	imagecaizhi = Image.open(materiafile)
+	print("2222")
 	imagecaizhi = imagecaizhi.resize(imageAArrayTemp.size)
 	#print imagecaizhi.size, images.size
 	imgBlend = Image.blend(imageAArrayTemp, imagecaizhi, 0.5)
@@ -434,7 +443,7 @@ def generateScarv(rgbs, packNum, imageAName, materiafile,timeid):
 	imgBlend.save("C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/fabricPartA" + "_" + timeid + ".jpg")
 
 	# imageAArrayTemp.save("D:/2017/images/" + basename.split(".")[0] + "_" + timeid + ".jpg")
-	
+
 if __name__ == '__main__':
 	# generateScarv("175,0,0,0,123,0", 2, "D:/20170602/PycharmProjects/firstDL_netEast/artgene/HD1-2G-2.bmp", "D:/20170602/PycharmProjects/firstDL_netEast/artgene/G-CMA1-1.jpg","22222")
-	generateScarv(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4],sys.argv[5])
+	generateScarv(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4].encode('utf-8').decode('gbk'),sys.argv[5])

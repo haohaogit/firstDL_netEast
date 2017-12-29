@@ -433,7 +433,8 @@ def generateScarv(rgbs, packNum, imageAName, time):
     basename = imageAName.split("/")[-1]
     print(basename.split(".")[0])
     for j in range(colorNum):
-        images[j].save("C:/2017/images/"+basename.split(".")[0] + "_" + "Template" + str(j) + "_" + time + ".jpg")
+        # if j == 0: images[j].save("C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/" + basename.split(".")[0] + "_" + "Template" + str(j) + "_" + time + ".jpg")
+        images[j].save("C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/"+basename.split(".")[0] + "_" + "Template" + str(j) + "_" + time + ".jpg")
 
 
 if __name__ == '__main__':

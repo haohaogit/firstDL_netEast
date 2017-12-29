@@ -1,15 +1,15 @@
-#coding:utf-8
-# from Tkinter import *
+# coding:utf-8
+
 import math
 from PIL import Image
-# import matplotlib.pyplot as plt
 import numpy as np
 import sys
 
-def boatAssemble(content,rgb, materialfile,timeid):
+
+def boatAssemble(content, rgb, materialfile,timeid):
     print(content)
     print(rgb)
-    print(materialfile)
+    print(timeid)
     content = content.split(",")
     minitemA = content[0]
     minitemB = content[1]
@@ -28,55 +28,66 @@ def boatAssemble(content,rgb, materialfile,timeid):
 
     print(minitemD)
     if minitemD == "D1":
-        boat = Image.new('RGBA', (1173,1024),'white')					
+        boat = Image.new('RGBA', (1173, 1024), 'white')
         imageA = Image.open("C:/firstDL_netEast/D1/" + minitemA + '.png')
         imageB = Image.open("C:/firstDL_netEast/D1/" + minitemB + '.png')
         imageC = Image.open("C:/firstDL_netEast/D1/" + minitemC + '.png')
         print(minitemD)
     else:
-        boat = Image.new('RGBA', (1173,1024),'white')					
+        boat = Image.new('RGBA', (1173, 1024), 'white')
         imageA = Image.open("C:/firstDL_netEast/D2/" + minitemA + '.png')
         imageB = Image.open("C:/firstDL_netEast/D2/" + minitemB + '.png')
         imageC = Image.open("C:/firstDL_netEast/D2/" + minitemC + '.png')
-    print(minitemD)
-    #boat = Image.new('RGBA', (1000,1000),'white')
-    #imageA = Image.open(minitemA + '.png')
-    #imageB = Image.open(minitemB + '.png')
-    #imageC = Image.open(minitemC + '.png')
-	
-    #imageA = Image.open('D3' + '.png')
-    #imageB = Image.open('B2' + '.png')
-    #imageC = Image.open('C2' + '.png')
-	
-	#imageDMask = Image.open('maskboardD1RGB229.229.229' + '.jpg')
-    #imgaecaizhi = Image.open('M22' + '.jpg')
+        print(minitemD)
+    # boat = Image.new('RGBA', (1000,1000),'white')
+    # imageA = Image.open(minitemA + '.png')
+    # imageB = Image.open(minitemB + '.png')
+    # imageC = Image.open(minitemC + '.png')
+
+    # imageA = Image.open('D3' + '.png')
+    # imageB = Image.open('B2' + '.png')
+    # imageC = Image.open('C2' + '.png')
+
+    # imageDMask = Image.open('maskboardD1RGB229.229.229' + '.jpg')
+    # imgaecaizhi = Image.open('M22' + '.jpg')
     if minitemD == "D1":
         imgaecaizhi = Image.open(materialfile)
         imageDMask = Image.open("C:/firstDL_netEast/D1/" + minitemA + "_mask.png")
     else:
         imgaecaizhi = Image.open(materialfile)
         imageDMask = imageDMask = Image.open("C:/firstDL_netEast/D2/" + minitemA + "_mask.png")
-    #imgaelogo = Image.open('LOGO4' + '.png')
-    print("C:/firstDL_netEast/D2/"+minitemA+"_mask.png")
+        # imgaelogo = Image.open('LOGO4' + '.png')
+        print("C:/firstDL_netEast/D2/" + minitemA + "_mask.png")
     imageDMaskArray = np.array(imageDMask)
-    rows,cols,dims = imageDMaskArray.shape
-    print(rows,cols,dims)
+    rows, cols, dims = imageDMaskArray.shape
+    print(rows, cols, dims)
+
     pix = imageDMask.load()
-    #pixcaizhi = imgaecaizhi.load()
+    pixcaizhi = imgaecaizhi.load()
     for x in range(cols):
         for y in range(rows):
-            #print pix[x,y]
+            # print pix[x,y]
+            rs, gs, bs, a = pix[x, y]
+            rss, gss, bss, ass = pixcaizhi[x, y]
+            if rs != 229 or gs != 229 or bs != 229:
+                # rss,gss,bss,ass = pixcaizhi[x,y]
+                # pix[x,y] = (r,g,b,a)
+                pixcaizhi[x, y] = (255, 255, 255, 0)
+                # pix[x,y] = (rss,gss,bss,a)
+                # print pix[x,y]
+                # print imageDMaskArray[x,y:].all()
+    # plt.imshow(imageDMaskArray)
+    # imgBlend = Image.blend(imageDMask, imgaecaizhi, 0.7)
+
+    pix = imageDMask.load()
+    for x in range(cols):
+        for y in range(rows):
             rs,gs,bs,a = pix[x,y]
             if rs == 229 and gs == 229 and bs == 229:
-                #rss,gss,bss,ass = pixcaizhi[x,y]
                 pix[x,y] = (r,g,b,a)
-                #pix[x,y] = (rss,gss,bss,a)
-                #print pix[x,y]
-                #print imageDMaskArray[x,y:].all()
-    #plt.imshow(imageDMaskArray)
-    #imgBlend = Image.blend(imageDMask, imgaecaizhi, 0.7)
+
     imgBlend = imageDMask
-	
+
     pix = imageDMask.load()
     pixcaizhi = imgaecaizhi.load()
     for x in range(cols):
@@ -84,8 +95,7 @@ def boatAssemble(content,rgb, materialfile,timeid):
             rs,gs,bs,a = pix[x,y]
             if rs != r and gs != g and bs != b:
                 pixcaizhi[x,y] = (255,255,255,0)
-	
-    #imgBlend = Image.blend(imgaecaizhi, imageDMask, 0.5)
+
     print(minitemA, minitemB,minitemC,minitemD)
     r,g,b,a = imageB.split()
     boat.paste(imageB, (0,0), mask = a)
@@ -96,6 +106,8 @@ def boatAssemble(content,rgb, materialfile,timeid):
     boat.paste(imgBlend, (0,0), mask = a)
     r,g,b,a = imgaecaizhi.split()
     boat.paste(imgaecaizhi, (0,0), mask = a)
+    box = (0, 200, 1173, 852)
+    boat = boat.crop(box)
     boat.save("C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/boatTextureA_" + timeid + ".jpg")
     boat.save("C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/boatPartA_" + timeid + ".jpg")
 
@@ -107,3 +119,4 @@ def boatAssemble(content,rgb, materialfile,timeid):
 if __name__ == '__main__':
     # boatAssemble("A4,B3,C2,D1","100,100,20","C:\\apache-tomcat-7.0.53\\wtpwebapps\\art0804\\image\\M23.png","11111")
     boatAssemble(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4])
+    # boatAssemble("A2,B2,C2,D2", "45,10,55", "C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/boatM22.png","11111111")

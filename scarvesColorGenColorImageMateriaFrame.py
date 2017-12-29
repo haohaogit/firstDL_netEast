@@ -353,7 +353,7 @@ def AddAMatchingFromACenter(params, packs, numColorPerPack, h, s, l, span0, span
 		
 
 def generateScarv(rgbs, packNum, imageAName, materiafile, frameFile,timeid):
-	print("1234567890")
+	
 	C2 = [255, 0]
 	C3 = [229, 127, 76]
 	C4 = [229, 178, 127, 76]
@@ -438,7 +438,7 @@ def generateScarv(rgbs, packNum, imageAName, materiafile, frameFile,timeid):
 	# basename = imageAName.split("/")[-1]
 	# print(basename.split(".")[0])
 	# imgBlend.save("D:/2017/images/" + basename.split(".")[0] + "_frame_" + timeid + ".jpg")
-	imgBlend.save("C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/fabricPartA" + "_" + timeid + ".jpg")
+	imgBlend.save("C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/fabricPartA_" + timeid + ".jpg")
 	
 if __name__ == '__main__':
 	# generateScarv("175,0,0,0,123,0", 2, "D:/20170602/PycharmProjects/firstDL_netEast/artgene/HD1-2G-2.bmp", "D:/20170602/PycharmProjects/firstDL_netEast/artgene/G-CS3-3.jpg", "D:/20170602/PycharmProjects/firstDL_netEast/artgene/BH1-1.png","212121")

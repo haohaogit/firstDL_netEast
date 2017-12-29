@@ -104,6 +104,8 @@ def boatAssemble(content,timeid):
         boat.paste(imageC, (0,0), mask = a)
     r,g,b,a = imageA.split()
     boat.paste(imageA, (0,0), mask = a)
+    box = (0, 200, 1173, 852)
+    boat=boat.crop(box)
     boat.save("C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/boat_" + timeid + ".jpg")
     boat.save("C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/boatColor_" + timeid + ".jpg")
     boat.save("C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/boatTexture_" + timeid + ".jpg")
