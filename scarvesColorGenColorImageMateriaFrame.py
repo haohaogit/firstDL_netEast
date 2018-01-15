@@ -411,7 +411,7 @@ def generateScarv(rgbs, packNum, imageAName, materiafile, frameFile,timeid):
 			#if((imageAArray[x,y,0] in range(C[i]-5,C[i]+5))&(imageAArray[x,y,1] in range(C[i]-5,C[i]+5))&(imageAArray[x,y,2] in range(C[i]-5,C[i]+5))):
 				#if imageAArrayTemp.getpixel[x,y] in range(C[i]-15,C[i]+15):
 				r,g,b = pix[y,x]
-				if r in range(C[i]-15,C[i]+15):
+				if r in range(C[i]-10,C[i]+10):
 					# pix[y,x] = (int(rs[i]),int(gs[i]),int(bs[i]))
 					pix[y, x] = (int(rgbs[i * 3 + 0]), int(rgbs[i * 3 + 1]), int(rgbs[i * 3 + 2]))
 					break
@@ -425,6 +425,7 @@ def generateScarv(rgbs, packNum, imageAName, materiafile, frameFile,timeid):
 	imagecaizhi = Image.open(materiafile)
 	imagecaizhi = imagecaizhi.resize(imageAArrayTemp.size)
 	#print imagecaizhi.size, images.size
+	imagecaizhi = imagecaizhi.convert("RGB")
 	imgBlend = Image.blend(imageAArrayTemp, imagecaizhi, 0.5)
 	imagebiankuang = Image.open(frameFile)
 	imagebiankuang = imagebiankuang.resize(imageAArrayTemp.size)

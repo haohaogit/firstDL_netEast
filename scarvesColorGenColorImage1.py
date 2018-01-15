@@ -419,7 +419,7 @@ def generateScarv(rgbs, packNum, imageAName,timeid):
                 # if((imageAArray[x,y,0] in range(C[i]-5,C[i]+5))&(imageAArray[x,y,1] in range(C[i]-5,C[i]+5))&(imageAArray[x,y,2] in range(C[i]-5,C[i]+5))):
                 # if imageAArrayTemp.getpixel[x,y] in range(C[i]-15,C[i]+15):
                 r, g, b = pix[y, x]
-                if r in range(C[i] - 15, C[i] + 15):
+                if r in range(C[i] - 10, C[i] + 10):
                     pix[y, x] = (int(rgbs[i * 3 + 0]), int(rgbs[i * 3 + 1]), int(rgbs[i * 3 + 2]))
                     break
                     # print int(rss[j][i]),int(gss[j][i]),int(bss[j][i])

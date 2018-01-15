@@ -361,6 +361,8 @@ def AddAMatchingFromACenter(params, packs, numColorPerPack, h, s, l, span0, span
 
 
 def generateScarv(rgbs, packNum, imageAName, time):
+    print("rt666_"+imageAName)
+    print("packNum "+packNum)
     C2 = [255, 0]
     C3 = [229, 127, 76]
     C4 = [229, 178, 127, 76]
@@ -421,7 +423,7 @@ def generateScarv(rgbs, packNum, imageAName, time):
                     # if((imageAArray[x,y,0] in range(C[i]-5,C[i]+5))&(imageAArray[x,y,1] in range(C[i]-5,C[i]+5))&(imageAArray[x,y,2] in range(C[i]-5,C[i]+5))):
                     # if imageAArrayTemp.getpixel[x,y] in range(C[i]-15,C[i]+15):
                     r, g, b = pix[y, x]
-                    if r in range(C[i] - 15, C[i] + 15):
+                    if r in range(C[i] - 10, C[i] + 10):
                         pix[y, x] = (int(rgbs[j * packNum * 3 + i * 3 + 0]), int(rgbs[j * packNum * 3 + i * 3 + 1]),
                                      int(rgbs[j * packNum * 3 + i * 3 + 2]))
                         break

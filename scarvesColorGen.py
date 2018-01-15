@@ -418,25 +418,25 @@ def generateScarv(content):
                 Vtemp = Vtemp + (-int(content[0])) / 3.0 * (A1[i] - A12[i]) + A12[i]
             if int(content[0]) != 0:
                 k = k + 1
-        elif int(content[0]) + 4 > 4:
+        elif int(content[0]) + 4 >= 4:
             V12.append((int(content[0])) / 3.0 * (A2[i] - A12[i]) + A12[i])
             if i == 0:
                 Vtemp = Vtemp + (int(content[0])) / 3.0 * random.randint(0, 360)
             # print Vtemp
             else:
                 Vtemp = Vtemp + (int(content[0])) / 3.0 * (A2[i] - A12[i]) + A12[i]
-            if int(content[0]) != 0:
-                k = k + 1
+            #if int(content[0]) != 0:
+            k = k + 1
         if int(content[1]) + 4 < 4:
             V34.append((-int(content[1])) / 3.0 * (A3[i] - A34[i]) + A34[i])
             Vtemp = Vtemp + (-int(content[1])) / 3.0 * (A3[i] - A34[i]) + A34[i]
             if int(content[1]) != 0:
                 k = k + 1
-        elif int(content[1]) + 4 > 4:
+        elif int(content[1]) + 4 >= 4:
             V34.append((int(content[1])) / 3.0 * (A4[i] - A34[i]) + A34[i])
             Vtemp = Vtemp + (int(content[1])) / 3.0 * (A4[i] - A34[i]) + A34[i]
-            if int(content[1]) != 0:
-                k = k + 1
+            #if int(content[1]) != 0:
+            k = k + 1
         if int(content[2]) + 4 < 4:
             V56.append((-int(content[2])) / 3.0 * (A5[i] - A56[i]) + A56[i])
             if i == 0:
@@ -445,14 +445,14 @@ def generateScarv(content):
                 Vtemp = Vtemp + (-int(content[2])) / 3.0 * (A5[i] - A56[i]) + A56[i]
             if int(content[2]) != 0:
                 k = k + 1
-        elif int(content[2]) + 4 > 4:
+        elif int(content[2]) + 4 >= 4:
             V56.append((int(content[2])) / 3.0 * (A6[i] - A56[i]) + A56[i])
             if i == 0:
                 Vtemp = Vtemp + (int(content[2])) / 3.0 * random.randint(0, 360)
             else:
                 Vtemp = Vtemp + (int(content[2])) / 3.0 * (A6[i] - A56[i]) + A56[i]
-            if int(content[2]) != 0:
-                k = k + 1
+            #if int(content[2]) != 0:
+            k = k + 1
         # print k
 
         V.append(Vtemp / float(k))
@@ -513,5 +513,5 @@ def generateScarv(content):
             # print(int(rss[j][i]),int(gss[j][i]),int(bss[j][i]))
 
 if __name__ == '__main__':
-	# generateScarv('-1,-1,-1,4')
+	#generateScarv('0,1,0,4')
     generateScarv(sys.argv[1])

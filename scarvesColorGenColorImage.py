@@ -362,6 +362,7 @@ def AddAMatchingFromACenter(params, packs, numColorPerPack, h, s, l, span0, span
 
 
 def generateScarv(rgbs, packNum, imageAName,timeid):
+
     C2 = [255, 0]
     C3 = [229, 127, 76]
     C4 = [229, 178, 127, 76]
@@ -419,7 +420,7 @@ def generateScarv(rgbs, packNum, imageAName,timeid):
                 # if((imageAArray[x,y,0] in range(C[i]-5,C[i]+5))&(imageAArray[x,y,1] in range(C[i]-5,C[i]+5))&(imageAArray[x,y,2] in range(C[i]-5,C[i]+5))):
                 # if imageAArrayTemp.getpixel[x,y] in range(C[i]-15,C[i]+15):
                 r, g, b = pix[y, x]
-                if r in range(C[i] - 15, C[i] + 15):
+                if r in range(C[i] - 10, C[i] + 10):
                     pix[y, x] = (int(rgbs[i * 3 + 0]), int(rgbs[i * 3 + 1]), int(rgbs[i * 3 + 2]))
                     break
                     # print int(rss[j][i]),int(gss[j][i]),int(bss[j][i])
@@ -437,9 +438,10 @@ def generateScarv(rgbs, packNum, imageAName,timeid):
     imageAArrayTemp.save("C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/fabricColorA" + "_" + timeid + ".jpg")
     imageAArrayTemp.save("C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/fabricTextureA" + "_" + timeid + ".jpg")
     imageAArrayTemp.save("C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/fabricPartA" + "_" + timeid + ".jpg")
+    print("imageAName" + imageAName)
 
 
 
 if __name__ == '__main__':
-    # generateScarv("175,0,0,0,123,0", 2, "D:/20170602/PycharmProjects/firstDL_netEast/artgene/HD1-2G-2.bmp","15236879")
-    generateScarv(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4])
+    generateScarv("195,63,0,195,63,65,195,0,63,0,125,63,12,14,63,0,0,63,200,200,200,14,14,14,200,0,0","9","C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/9G_1513996320728.bmp","15236879")
+    # generateScarv(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4])

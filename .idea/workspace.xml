@@ -11,26 +11,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="cookerAssemble.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cookerAssemble.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3151">
-              <caret line="142" column="92" lean-forward="false" selection-start-line="142" selection-start-column="92" selection-end-line="142" selection-end-column="92" />
-              <folding>
-                <element signature="e#125#136#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="scarvesColorGenColorImageTemplate.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scarvesColorGenColorImageTemplate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9867">
-              <caret line="436" column="72" lean-forward="false" selection-start-line="436" selection-start-column="72" selection-end-line="436" selection-end-column="72" />
-              <folding>
-                <element signature="e#1#12#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="303">
+              <caret line="364" column="28" lean-forward="false" selection-start-line="364" selection-start-column="28" selection-end-line="364" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -38,7 +24,7 @@
       <file leaf-file-name="GeneticAlgorithmTexture.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GeneticAlgorithmTexture.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="4025">
               <caret line="180" column="0" lean-forward="false" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
               <folding>
                 <element signature="e#39#50#0" expanded="true" />
@@ -47,21 +33,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="boatAssembleTest.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="boatAssembleTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boatAssembleTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
+            <state relative-caret-position="2369">
               <caret line="106" column="29" lean-forward="false" selection-start-line="106" selection-start-column="29" selection-end-line="106" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="boatAssembleColorTest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boatAssembleColorTest.py">
+      <file leaf-file-name="scarvesColorGen.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scarvesColorGen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="84" column="29" lean-forward="false" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
+            <state relative-caret-position="2619">
+              <caret line="516" column="4" lean-forward="false" selection-start-line="516" selection-start-column="4" selection-end-line="516" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scarvesColorGenColorImageMateriaFrame.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scarvesColorGenColorImageMateriaFrame.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="427" column="44" lean-forward="true" selection-start-line="427" selection-start-column="44" selection-end-line="427" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scarvesColorGen1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scarvesColorGen1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scarvesColorGenColorImageMateria.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scarvesColorGenColorImageMateria.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="436" column="44" lean-forward="true" selection-start-line="436" selection-start-column="4" selection-end-line="436" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scarvesColorGenColorImage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scarvesColorGenColorImage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="758">
+              <caret line="445" column="177" lean-forward="false" selection-start-line="445" selection-start-column="106" selection-end-line="445" selection-end-column="177" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scarvesColorGenColorImage1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scarvesColorGenColorImage1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="421" column="52" lean-forward="true" selection-start-line="421" selection-start-column="52" selection-end-line="421" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -70,53 +106,8 @@
       <file leaf-file-name="boatAssembleMaterialTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boatAssembleMaterialTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
+            <state relative-caret-position="2415">
               <caret line="108" column="4" lean-forward="false" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GeneticAlgorithmColor.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GeneticAlgorithmColor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2001">
-              <caret line="93" column="19" lean-forward="false" selection-start-line="90" selection-start-column="4" selection-end-line="93" selection-end-column="19" />
-              <folding>
-                <element signature="e#39#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cookerAssembleColor.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cookerAssembleColor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="20" column="19" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="20" selection-end-column="19" />
-              <folding>
-                <marker date="1511872150370" expanded="true" signature="110:1406" ph="..." />
-                <marker date="1511872150370" expanded="true" signature="3424:3425" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cookerAssembleLogo.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cookerAssembleLogo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1472">
-              <caret line="67" column="63" lean-forward="false" selection-start-line="67" selection-start-column="63" selection-end-line="67" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cookerAssembleMaterial.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cookerAssembleMaterial.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1403">
-              <caret line="64" column="63" lean-forward="false" selection-start-line="64" selection-start-column="63" selection-end-line="64" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -148,25 +139,25 @@
         <option value="$PROJECT_DIR$/api_test.py" />
         <option value="$PROJECT_DIR$/ThirdDl.py" />
         <option value="$PROJECT_DIR$/scarvesColorGen1.py" />
-        <option value="$PROJECT_DIR$/scarvesColorGen.py" />
-        <option value="$PROJECT_DIR$/scarvesColorGenColorImage.py" />
-        <option value="$PROJECT_DIR$/scarvesColorGenColorImage1.py" />
-        <option value="$PROJECT_DIR$/scarvesColorGenColorImageMateria.py" />
-        <option value="$PROJECT_DIR$/scarvesColorGenColorImageMateriaFrame.py" />
         <option value="$PROJECT_DIR$/cookerAssemble.py" />
         <option value="$PROJECT_DIR$/cookerAssembleColor.py" />
         <option value="$PROJECT_DIR$/cookerAssembleLogo.py" />
         <option value="$PROJECT_DIR$/cookerAssembleMaterial.py" />
-        <option value="$PROJECT_DIR$/scarvesColorGenColorImageTemplate.py" />
         <option value="$PROJECT_DIR$/GeneticAlgorithmColor.py" />
         <option value="$PROJECT_DIR$/GeneticAlgorithmTexture.py" />
         <option value="$PROJECT_DIR$/boatAssembleMaterialTest.py" />
         <option value="$PROJECT_DIR$/boatAssembleColorTest.py" />
         <option value="$PROJECT_DIR$/boatAssembleTest.py" />
+        <option value="$PROJECT_DIR$/scarvesColorGen.py" />
+        <option value="$PROJECT_DIR$/scarvesColorGenColorImage1.py" />
+        <option value="$PROJECT_DIR$/scarvesColorGenColorImage.py" />
+        <option value="$PROJECT_DIR$/scarvesColorGenColorImageTemplate.py" />
+        <option value="$PROJECT_DIR$/scarvesColorGenColorImageMateria.py" />
+        <option value="$PROJECT_DIR$/scarvesColorGenColorImageMateriaFrame.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1400" />
@@ -207,7 +198,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -220,6 +210,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -249,7 +240,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.GeneticAlgorithmTexture">
+  <component name="RunManager" selected="Python.scarvesColorGenColorImageMateria">
     <configuration name="GeneticAlgorithmColor" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -301,6 +292,40 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="scarvesColorGen" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="firstDL_netEast" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scarvesColorGen.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="scarvesColorGenColorImage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="firstDL_netEast" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scarvesColorGenColorImage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="scarvesColorGenColorImageMateria" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -318,55 +343,21 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="scarvesColorGenColorImageMateriaFrame" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="firstDL_netEast" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scarvesColorGenColorImageMateriaFrame.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="scarvesColorGenColorImageTemplate" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="firstDL_netEast" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scarvesColorGenColorImageTemplate.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.dl_1" />
-      <item index="1" class="java.lang.String" itemvalue="Python.scarvesColorGenColorImageTemplate" />
-      <item index="2" class="java.lang.String" itemvalue="Python.scarvesColorGenColorImageMateria" />
-      <item index="3" class="java.lang.String" itemvalue="Python.scarvesColorGenColorImageMateriaFrame" />
-      <item index="4" class="java.lang.String" itemvalue="Python.GeneticAlgorithmColor" />
-      <item index="5" class="java.lang.String" itemvalue="Python.GeneticAlgorithmTexture" />
+      <item index="1" class="java.lang.String" itemvalue="Python.GeneticAlgorithmColor" />
+      <item index="2" class="java.lang.String" itemvalue="Python.GeneticAlgorithmTexture" />
+      <item index="3" class="java.lang.String" itemvalue="Python.scarvesColorGenColorImage" />
+      <item index="4" class="java.lang.String" itemvalue="Python.scarvesColorGen" />
+      <item index="5" class="java.lang.String" itemvalue="Python.scarvesColorGenColorImageMateria" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.GeneticAlgorithmTexture" />
-        <item index="1" class="java.lang.String" itemvalue="Python.GeneticAlgorithmColor" />
-        <item index="2" class="java.lang.String" itemvalue="Python.scarvesColorGenColorImageMateriaFrame" />
-        <item index="3" class="java.lang.String" itemvalue="Python.scarvesColorGenColorImageMateria" />
-        <item index="4" class="java.lang.String" itemvalue="Python.scarvesColorGenColorImageTemplate" />
+        <item index="0" class="java.lang.String" itemvalue="Python.scarvesColorGenColorImageMateria" />
+        <item index="1" class="java.lang.String" itemvalue="Python.scarvesColorGenColorImage" />
+        <item index="2" class="java.lang.String" itemvalue="Python.scarvesColorGen" />
+        <item index="3" class="java.lang.String" itemvalue="Python.GeneticAlgorithmTexture" />
+        <item index="4" class="java.lang.String" itemvalue="Python.GeneticAlgorithmColor" />
       </list>
     </recent_temporary>
   </component>
@@ -384,14 +375,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2171875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23362446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33624455" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -432,9 +424,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3105">
           <caret line="140" column="78" lean-forward="false" selection-start-line="140" selection-start-column="78" selection-end-line="140" selection-end-column="78" />
-          <folding>
-            <element signature="e#125#136#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -498,9 +487,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3105">
           <caret line="140" column="78" lean-forward="false" selection-start-line="140" selection-start-column="78" selection-end-line="140" selection-end-column="78" />
-          <folding>
-            <element signature="e#125#136#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -665,56 +651,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scarvesColorGenColorImage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1184">
-          <caret line="431" column="135" lean-forward="false" selection-start-line="431" selection-start-column="135" selection-end-line="431" selection-end-column="135" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scarvesColorGenColorImageMateriaFrame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="440" column="129" lean-forward="true" selection-start-line="440" selection-start-column="129" selection-end-line="440" selection-end-column="135" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scarvesColorGenColorImageMateria.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="433" column="128" lean-forward="false" selection-start-line="433" selection-start-column="128" selection-end-line="433" selection-end-column="128" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scarvesColorGen1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scarvesColorGenColorImage1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="431" column="135" lean-forward="false" selection-start-line="431" selection-start-column="135" selection-end-line="431" selection-end-column="135" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scarvesColorGen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11730">
-          <caret line="516" column="30" lean-forward="false" selection-start-line="516" selection-start-column="30" selection-end-line="516" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cookerAssembleLogo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1472">
           <caret line="67" column="63" lean-forward="false" selection-start-line="67" selection-start-column="63" selection-end-line="67" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -722,7 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1403">
           <caret line="64" column="63" lean-forward="false" selection-start-line="64" selection-start-column="63" selection-end-line="64" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -730,19 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3151">
           <caret line="142" column="92" lean-forward="false" selection-start-line="142" selection-start-column="92" selection-end-line="142" selection-end-column="92" />
-          <folding>
-            <element signature="e#125#136#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scarvesColorGenColorImageTemplate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9867">
-          <caret line="436" column="72" lean-forward="false" selection-start-line="436" selection-start-column="72" selection-end-line="436" selection-end-column="72" />
-          <folding>
-            <element signature="e#1#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -762,24 +688,14 @@
         <state relative-caret-position="2001">
           <caret line="93" column="19" lean-forward="false" selection-start-line="90" selection-start-column="4" selection-end-line="93" selection-end-column="19" />
           <folding>
-            <element signature="e#39#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GeneticAlgorithmTexture.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="180" column="0" lean-forward="false" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
-          <folding>
-            <element signature="e#39#50#0" expanded="true" />
+            <element signature="e#39#50#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/boatAssembleColorTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
+        <state relative-caret-position="1840">
           <caret line="84" column="29" lean-forward="false" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
           <folding />
         </state>
@@ -787,7 +703,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/boatAssembleMaterialTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
+        <state relative-caret-position="2415">
           <caret line="108" column="4" lean-forward="false" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="29" />
           <folding />
         </state>
@@ -795,8 +711,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/boatAssembleTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
+        <state relative-caret-position="2369">
           <caret line="106" column="29" lean-forward="false" selection-start-line="106" selection-start-column="29" selection-end-line="106" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GeneticAlgorithmTexture.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4025">
+          <caret line="180" column="0" lean-forward="false" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+          <folding>
+            <element signature="e#39#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scarvesColorGenColorImageTemplate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="364" column="28" lean-forward="false" selection-start-line="364" selection-start-column="28" selection-end-line="364" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scarvesColorGenColorImage1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="421" column="52" lean-forward="true" selection-start-line="421" selection-start-column="52" selection-end-line="421" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scarvesColorGenColorImage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="758">
+          <caret line="445" column="177" lean-forward="false" selection-start-line="445" selection-start-column="106" selection-end-line="445" selection-end-column="177" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scarvesColorGen1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scarvesColorGen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2619">
+          <caret line="516" column="4" lean-forward="false" selection-start-line="516" selection-start-column="4" selection-end-line="516" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scarvesColorGenColorImageMateria.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="436" column="44" lean-forward="true" selection-start-line="436" selection-start-column="4" selection-end-line="436" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scarvesColorGenColorImageMateriaFrame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="427" column="44" lean-forward="true" selection-start-line="427" selection-start-column="44" selection-end-line="427" selection-end-column="44" />
           <folding />
         </state>
       </provider>

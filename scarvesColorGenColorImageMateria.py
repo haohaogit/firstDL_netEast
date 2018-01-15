@@ -418,7 +418,7 @@ def generateScarv(rgbs, packNum, imageAName, materiafile,timeid):
 			#if((imageAArray[x,y,0] in range(C[i]-5,C[i]+5))&(imageAArray[x,y,1] in range(C[i]-5,C[i]+5))&(imageAArray[x,y,2] in range(C[i]-5,C[i]+5))):
 				#if imageAArrayTemp.getpixel[x,y] in range(C[i]-15,C[i]+15):
 				r,g,b = pix[y,x]
-				if r in range(C[i]-15,C[i]+15):
+				if r in range(C[i]-10,C[i]+10):
 					# pix[y,x] = (int(rs[i]),int(gs[i]),int(bs[i]))
 					pix[y, x] = (int(rgbs[i * 3 + 0]), int(rgbs[i * 3 + 1]), int(rgbs[i * 3 + 2]))
 					break
@@ -433,7 +433,8 @@ def generateScarv(rgbs, packNum, imageAName, materiafile,timeid):
 	imagecaizhi = Image.open(materiafile)
 	print("2222")
 	imagecaizhi = imagecaizhi.resize(imageAArrayTemp.size)
-	#print imagecaizhi.size, images.size
+	print(imagecaizhi.size, imageAArrayTemp.size)
+	imagecaizhi = imagecaizhi.convert("RGB")
 	imgBlend = Image.blend(imageAArrayTemp, imagecaizhi, 0.5)
 
 	# basename = imageAName.split("/")[-1]
@@ -445,5 +446,5 @@ def generateScarv(rgbs, packNum, imageAName, materiafile,timeid):
 	# imageAArrayTemp.save("D:/2017/images/" + basename.split(".")[0] + "_" + timeid + ".jpg")
 
 if __name__ == '__main__':
-	# generateScarv("175,0,0,0,123,0", 2, "D:/20170602/PycharmProjects/firstDL_netEast/artgene/HD1-2G-2.bmp", "D:/20170602/PycharmProjects/firstDL_netEast/artgene/G-CMA1-1.jpg","22222")
-	generateScarv(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4].encode('utf-8').decode('gbk'),sys.argv[5])
+	generateScarv("195,63,0,195,63,65,195,0,63,0,125,63,12,14,63,0,0,63,200,200,200,14,14,14,200,0,0","9", "C:/apache-tomcat-7.0.53/wtpwebapps/art0804/image/9G_1513996320728.bmp", "D:/2017/mystudy/fabric (7).jpg","22222")
+	# generateScarv(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4].encode('utf-8').decode('gbk'),sys.argv[5])
